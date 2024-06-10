@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Paudel's Personal Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #3a3a3a, #1e1e1e);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header marquee {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1e90ff;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #87CEEB;
+        }
+        header .social-links {
+            margin-top: 1rem;
+        }
+        header .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        header .social-links a:hover {
+            color: #ff6347;
+        }
+        nav {
+            background: #555;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background: #ff6347;
+            color: #fff;
+            border-radius: 5px;
+        }
+        section {
+            padding: 2rem;
+            background: #fff;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .search-bar {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 0.5rem;
+            width: 90%;
+            max-width: 500px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        .search-bar input:focus {
+            border-color: #ff6347;
+            outline: none;
+        }
+        .card {
+            background: linear-gradient(135deg, #f4f4f4, #e4e4e4);
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            background: #fffbeb;
+        }
+        .search-results {
+            display: none;
+            margin-top: 1rem;
+            text-align: left;
+        }
+        .search-results p {
+            background: #ff6347;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+        }
+        .highlight {
+            background-color: #87CEEB;
+            font-weight: bold;
+            color: #fff;
+            padding: 0.2rem 0.4rem;
+            border-radius: 5px;
+        }
+        footer {
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            section {
+                padding: 1rem;
+            }
+            .card {
+                padding: 1rem;
+                margin: 0.5rem 0;
+            }
+            nav a {
+                padding: 0.5rem;
+                flex: 1 1 100%;
+                text-align: center;
+            }
+            footer {
+                padding: 0.5rem 0;
+            }
+        }
+        /* Advanced search filter styles */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+        .filter-container select {
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <marquee scrolldelay="12"><font size="7">Success Paudel's Personal Webpage</font></marquee>
+    <p>Welcome to my personal webpage</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/thesuccess_paudel/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</header>
+
+<nav>
+    <a href="#profile" style="color: #1e90ff;">Profile</a>
+    <a href="#search" style="color: #ff4500;">Search</a>
+    <a href="#works" style="color: #32cd32;">Works</a>
+    <a href="#file-manager" style="color: #ff6347;">File Manager</a>
+    <a href="#users" style="color: #8a2be2;">Users</a>
+    <a href="#history" style="color: #ff69b4;">Profile History</a>
+    <a href="#documentary" style="color: #00ced1;">Documentary</a>
+    <a href="#about" style="color: #ff1493;">About</a>
+</nav>
+
+<section id="profile">
+    <h2 class="highlight">Profile</h2>
+    <div class="card animate__animated animate__fadeIn">
+        <h3 class="highlight">Success Paudel</h3>
+        <p>I am 14 years old and live in Nepal. I read in grade IX in PKVM.</p>
+    </div>
+</section>
+
+<section id="search" class="search-bar">
+    <h2 class="highlight">Search</h2>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <div class="filter-container">
+        <label for="filter">Filter by:</label>
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="projects">Projects</option>
+            <option value="users">Users</option>
+        </select>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+</section>
+
+<section id="works">
+    <h2 class="highlight">Works</h2>
+    <div class="card animate__animated animate__fadeIn">
+        <h3 class="highlight">Project 1</h3>
+        <p>Your work here.</p>
+    </div>
+    <div class="card animate__animated animate__fadeIn">
+        <h3 class="highlight">Project 2</h3>
+        <p>Project here.</p>
+    </div>
+</section>
+
+<section id="file-manager">
+    <h2 class="highlight">File Manager</h2>
+    <div class="card animate__animated animate__fadeIn">
+        <p>Manage your project files here.</p>
+        <ul id="fileList"></ul>
+        <input type="file" id="fileUpload" multiple>
+    </div>
+</section>
+
+<section id="users">
+    <h2 class="highlight">Users</h2>
+    <div id="userCards"></div>
+</section>
+
+<section id="history">
+    <h2 class="highlight">Profile History</h2>
+    <div class="card animate__animated animate__fadeIn">
+        <p>History of user profiles.</p>
+    </div>
+</section>
+
+<section id="documentary">
+    <h2 class="highlight">Documentary</h2>
+    <div class="card animate__animated animate__fadeIn
